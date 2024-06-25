@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    background-image: url('./background.webp');
+    background-size: cover;
+    background-position: center;
+}

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A real time chat application",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon backend/server.js"
   },
