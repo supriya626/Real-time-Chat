@@ -8,6 +8,8 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
+import Login from "../components/authentication/Login";
+import SignUp from "../components/authentication/SignUp";
 
 const HomePage = () => {
   return (
@@ -15,24 +17,25 @@ const HomePage = () => {
       <Box
         d="flex"
         justifyContent="center"
-        p={2}
-        bg={"#4bacfc5e"}
+        p={1.5}
+        bg={"#4bacfc7a"}
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
       >
         <Text
-          fontSize="4xl"
+          fontSize="3xl"
           fontFamily="work sans"
           textAlign="center"
           textColor={"#180a31"}
+          fontWeight={"bold"}
         >
           Chatter Boxie
         </Text>
       </Box>
       <Box
-        bg={"#4bacfc5e"}
+        bg={"#4bacfc7a"}
         w={"100%"}
         p={4}
         borderRadius="lg"
@@ -50,10 +53,10 @@ const HomePage = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              <Login></Login>
             </TabPanel>
             <TabPanel>
-              <p>two!</p>
+              <SignUp></SignUp>
             </TabPanel>
           </TabPanels>
         </Tabs>
